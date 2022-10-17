@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Mian Zhao">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <fieldset>
+
+        <br>
+        <!-- <label for="Orderform" style="color: rgb(237, 147, 12);" ><b>Order Form</b></label>-->
+
+
+        <h2 style="color:orange;"> Order form </h2>
+
+        <form action="./success.html" method="GET" id="Orderform" enctype="text/plain">
+            <br>
+            <fieldset>
+                <legend><b>Basic Information</b></legend>
+                <table style='border: 0px ;'>
+                    <tr>
+                        <td> <label for="userName"><b>Name:</b></label></td>
+                        <td> <input disabled type="text" id="userName" name="Name" placeholder="Mian" size="30">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email"><b>Email:</b> </label>
+                        </td>
+                        <td> <input type="email" id="email" name="Email" placeholder="zhao0253@algonquinlive.com"
+                                required size="30">
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="address"><b>Address:&nbsp;&nbsp;</b></label></td>
+                        <td> <textarea id="address" rows="6" cols="25"> </textarea>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="postcode"><b>Postcode:</b></label>
+                        </td>
+                        <td> <input type="text" id="postcode" name="postcode">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <br>
+
+            <fieldset>
+                <legend><b>Product Information</b></legend>
+                <!-- <table style='border: 1px solid rgba(12, 0, 0, 0.95) !important;'   >-->
+                <!--  <table style="border:1px solid black;">-->
+                <table style="border:1px solid black;">
+                    <tr style="border:1px solid black;">
+                        <th style="border:1px solid black;">Product</th>
+                        <th style="border:1px solid black;">Part Number</th>
+                        <th style="border:1px solid black;">Quantity</th>
+                        <th style="border:1px solid black;">Unit Price</th>
+                        <th style="border:1px solid black;">Subtotal </th>
+                    </tr>
+                    <tr style="border:1px solid black;">
+                        <td style="border:1px solid black;"><label for="Quantity1">Box</label></td>
+                        <td style="border:1px solid black;"><label for="Quantity1">AC100</label></td>
+                        <td style="border:1px solid black;"><input type="text" id="Quantity1" name="Quantity1"
+                                size="20"> </td>
+                        <td style="border:1px solid black;">$5</td>
+                        <td style="border:1px solid black;"><input type="text" id="Subtotal1" name="Subtotal1"
+                                size="35"> </td>
+                    </tr>
+                    <tr style="border:1px solid black;">
+                        <td style="border:1px solid black;"><label for="Quantity2">Coffee Table</label></td>
+                        <td style="border:1px solid black;"><label for="Quantity2">AC200</label></td>
+                        <td style="border:1px solid black;"> <input type="text" id="Quantity2" name="Quantity2"
+                                size="20"></td>
+                        <td style="border:1px solid black;">$100</td>
+                        <td style="border:1px solid black;"><input type="text" id="Subtotal2" name="Subtotal2"
+                                size="35"> </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black;"><label for="Quantity3">Chair</label></td>
+                        <td style="border:1px solid black;"><label for="Quantity3">AC300</label></td>
+                        <td style="border:1px solid black;"> <input type="text" id="Quantity3" name="Quantity3"
+                                size="20"></td>
+                        <td style="border:1px solid black;">$150</td>
+                        <td style="border:1px solid black;"><input type="text" id="Subtotal3" name="Subtotal3"
+                                size="35"> </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black;"><label for="Quantity4">Desk </label></td>
+                        <td style="border:1px solid black;"><label for="Quantity4">AC400 </label></td>
+
+                        <td style="border:1px solid black;"> <input type="text" id="Quantity4" name="Quantity4"
+                                size="20"></td>
+                        <td style="border:1px solid black;">$120</td>
+                        <td style="border:1px solid black;"> <input type="text" id="Subtotal4" name="Subtotal4"
+                                size="35"> </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black;"><label for="Quantity5">Coffee Table</label></td>
+                        <td style="border:1px solid black;"><label for="Quantity5">AC500</label></td>
+                        <td style="border:1px solid black;"> <input type="text" id="Quantity5" name="Quantity5"
+                                size="20"></td>
+                        <td style="border:1px solid black;">$130</td>
+                        <td style="border:1px solid black;"> <input type="text" id="Subtotal5" name="Subtotal5"
+                                size="35"> </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black; text-align: right;" colspan="4"> <label
+                                for="Total"><b>Total:</b>
+                            </label></td>
+
+                        <td><input type="text" id="Total" name="Total" size="35"></td>
+                    </tr>
+                </table>
+
+            </fieldset>
+            <br>
+            <br>
+
+            <h4>Credit Card Information</h4>
+            <h4> Card type</h4>
+            <table style="border: 0px ;">
+                <tr>
+                    <td style=" width: 130px;">
+                        <input type="radio" name="card" >Mastercard <br>
+                        <input type="radio" name="card" >Visa<br>
+                        <input type="radio" name="card" >Gift Card
+                    </td>
+
+
+                    <td><label for="cardnumber">Card Number :</label>
+                        <input type="text" id="cardnumber" name="cardnumber"><br>
+
+                        <br>
+
+                        <label for="Expirydate">&emsp;Expiry date:</label>
+                        <input type="date" id="Expirydate" name="Expirydate">
+                    </td>
+
+            </table>
+
+            <br>
+            <div>
+                <table style="border: 0px ;">
+                    <tr>
+                        <th>
+                            <label for="delivery_address"><b>Delivery Address :</b></label>
+                        </th>
+                        <th><textarea id="delivery_address" rows="6" cols="25"> </textarea></th>
+                    </tr>
+                </table>
+
+            </div>
+            <br>
+            <input type="submit" value="Send Order">
+            <input type="reset" value="Clear Form">
+        </form>
+
+
+    </fieldset>
+</body>
+
+</html>
