@@ -1,0 +1,56 @@
+* {
+    margin-left: 3px;
+    margin-right: 20px;
+  
+    /* font-size: medium; */
+}
+
+
+
+
+
+  
+    .textfield input{  
+width: 100%;
+/* padding-left: 10px; */
+padding-top: 5px;
+padding-bottom: 5px;
+/* border-color: rgb(193, 191, 191); */
+margin-top: 1px;
+margin-bottom: 1px; 
+border-radius: 5px;
+ /* border-style: solid;  */
+font-size: small;
+}
+
+
+#submit{
+    margin-top: 5px;
+    background: blue;
+    color: azure;
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#reset{
+    margin-top: 5px;
+    background: red;
+    color: azure;
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.warning{
+    color:red;
+     font-size: 12pt;
+     /* margin: auto; */
+} 
+
+.redInput{
+   /* background: red; */
+    border-color: red;
+    
+   
+}

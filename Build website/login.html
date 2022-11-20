@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Website</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styleSignup.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="./js/signup.js" defer></script>
+   
+</head>
+
+
+
+<body>
+    
+        <header>
+
+
+            <a href="#" class="logo">Speed<span>.</span></a>
+
+            <nav>
+                <ul class="navbar_signup">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Procuct </a></li>
+                    <li><a href=#>Signup</a></li>
+                    <li><a href="#">About</a></li>
+
+
+                </ul>
+
+            </nav>
+
+      
+
+
+            
+        </header>
+        <main>
+
+        <div class="formcontainer">
+            <hr>
+            <img src="./pic/signup/mercedes-header.jpg" alt="yellow tulipe">
+            <h1>Login</h1>
+            
+            <form name="form" action="registration.html" method="get" onsubmit="return validate();">
+                <!-- You will need to write the validate function for this form. -->
+
+                <div class="textfield">
+                    <!-- <label for="email">Email Address</label> -->
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+
+               
+
+                <div class="textfield">
+                    <label for="pass"></label>
+                    <input type="password" name="pass" id="pass" placeholder="Password">
+                </div>
+
+               
+
+               
+
+                <div class="checkbox">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">I am an emplyee</label>
+                </div>
+
+                <div class="textfield">
+                <button type="submit" id="submit">Login</button>
+            </div>
+           
+            <div class="bottom_p">
+                <p><a href="signup.html" id ="bottom_login">Create </a> account </p>
+            </div>
+            </form>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
