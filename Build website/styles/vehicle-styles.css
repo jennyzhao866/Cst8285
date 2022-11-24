@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+.main-vehicle {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "about-info about-info about-info about-info about-info about-info"
+    "aside vehicle-list vehicle-list vehicle-list vehicle-list vehicle-list"
+    "aside vehicle-list vehicle-list vehicle-list vehicle-list vehicle-list"
+    "aside vehicle-list vehicle-list vehicle-list vehicle-list vehicle-list"
+    "aside vehicle-list vehicle-list vehicle-list vehicle-list vehicle-list"
+  ;
+}
+.reveal{
+  visibility:visible;
+}
+
+
+.hide{
+  visibility: hidden;
+}
+/* .about-info{
+   grid-area: about-info;
+   background-color: rgb(63, 62, 93);
+   padding: 0px;
+   color:azure;
+ }
+  */
+aside {
+  grid-area: aside;
+  /* background-color: rgb(62, 93, 71);
+  color: rgb(1, 8, 14); */
+  padding: 20px;
+  text-align: center;
+
+
+
+}
+
+aside li {
+  margin: 10px;
+  list-style-type: none;
+ /* background-color: rgb(62, 93, 71); */
+}
+
+.vehicle-list {
+  grid-area: vehicle-list;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.vehicle {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 300px;
+  border: 1px solid rgb(62, 93, 71);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+
+  box-shadow: 5px 10px 10px rgb(62, 93, 71);
+}
+
+.vehicle h3 {
+  text-align: center;
+  background-color: rgb(63, 62, 93);
+  color: azure;
+  border-radius: 15px 15px 1px 1px;
+  padding: 5px;
+}
+
+.vehicle p {
+  text-align: center;
+}
+
+.vehicle img {
+  width: 100%;
+  height: 200px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .main-vehicle {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+
+      "aside"
+      "vehicle-list"
+      "vehicle-list"
+    ;
+  }
+}
