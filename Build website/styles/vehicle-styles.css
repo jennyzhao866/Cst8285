@@ -17,12 +17,12 @@
   ;
 }
 .reveal{
-  visibility:visible;
+  display: block;
 }
 
 
 .hide{
-  visibility: hidden;
+  display:none;
 }
 /* .about-info{
    grid-area: about-info;

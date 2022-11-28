@@ -17,7 +17,7 @@
     <a href=" " class="logo">Speed<span>.</span></a>
 
     <nav>
-      <ul class="navbar_signup">
+      <ul class="navbar_signup" >
         <li>
           <a href="index.html">Home</a>
         </li>
@@ -45,25 +45,25 @@
       <!-- <h3>More Info</h3> -->
       <ul>
         <li>
-          <button onclick="listFunction()">All vehicle</button>
+          <button class="button" id="all" name="all" onclick="bFunction(this.innerText)" >All vehicle</button>
         </li>
         <li>
-          <button onclick="suvFunction()">SUVs</button>
+          <button class="button" onclick="bFunction(this.innerText)">Suvs</button>
         </li>
         <li>
-          <button onclick="sedanFunction()">Sedans & Wagons</button>
+          <button class="button"  onclick="bFunction(this.innerText)">Sedans</button>
         </li>
         <li>
-          <button onclick="coupeFunction()">Coupes</button>
+          <button class="button" onclick="bFunction(this.innerText)">Coupes</button>
         </li>
         <li>
-          <button onclick="rodsterFunction()">Cabriolets & Roadsters</button>
+          <button class="button" onclick="bFunction(this.innerText)">Roadsters</button>
         </li>
         <li>
-          <button onclick="elecFunction()">Electric</button>
+          <button class="button" onclick="bFunction(this.innerText)">Electric</button>
         </li>
           <li>
-          <button onclick="futureFunction()">Future Vehicles & Concepts</button>
+          <button class="button"  onclick="bFunction(this.innerText)">Future</button>
         </li>
 
         <!-- <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, possimus.</li>
@@ -73,128 +73,128 @@
     </aside>
 
     <section class="vehicle-list" id="vehicle-list">
-      <div class="vehicle"  name="sedan" id="sedan">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
+
+      
+
+
+
+      <div class="vehicle" name="Sedans" id="sedan" >
+        <h3>2022 C300</h3>
+        <img src="./image/senda/2022c300_sedan.png" alt="html image">
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div class="vehicle" name="suv"  id="suv">
-        <h3>2022_suv</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-
-      <div class="vehicle" name="coupe" id="coupe">
-        <h3>2022_coupe</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-
-<!-- 
-      <div class="vehicle" name="sedan" id="sedan">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-
-      <div class="vehicle" name="sedan" id="sedan">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-
-      <div class="vehicle" name="sedan" id="sedan">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
+      <div class="vehicle" name="Suvs" >
+        <h3>2022 G63</h3>
+        <img src="./image/suv/2022G63.png" alt="html image">
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
 
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
 
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
+      <div class="vehicle" name="Coupes"  >
+        <h3>2022 AMG CLA 35</h3>
+        <img src="./image/coup/2023 AMG CLA 35 4MATIC Coupe.jpg" alt="html image">
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
 
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
+
+ 
+      <div class="vehicle" name="Sedans" >
+        <h3>2022 E450</h3>
+        <img src="./image/senda/2022E450.png" alt="html image">
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
+      <div class="vehicle" name="Sedans" >
+        <h3>2022 A220 4MATIC</h3>
+        <img src="./image/senda/2022 A 220 4MATIC Sedan.jpg" alt="html image">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div> 
+
+      <div class="vehicle" name="Sedans" >
+        <h3>2022 E450 sedan  6</h3>
+        <img src="./image/2022E450-1.png" alt="html image">
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
+      <div class="vehicle" name="Sedans"  >
+        <h3>2022 A250 4MATIC Hatch</h3>
+        <img src="./image/senda/2022 A 250 4MATIC Hatch.jpg" alt="html image">
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
+      <div class="vehicle" name="Suvs" >
+        <h3>2022 AMG GLA35 4MATIC</h3>
+        <img src="./image/suv/2022 AMG GLA 35 4MATIC SUV.jpg" alt="html image">
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div class="vehicle">
-        <h3>2022c300_sedan</h3>
-        <img src="./image/2022c300_sedan.png" alt="html image">
+      <div class="vehicle" name="Suvs" >
+        <h3>2022 GLC 300 4MATIC</h3>
+        <img src="./image/suv/2022 GLC 300 4MATIC SUV.jpg" alt="html image">
         <p>Lorem ipsum dolor sit amet.</p>
       </div> -->
+      <div class="vehicle" name="Suvs" >
+        <h3>2022 GLC 350 4MATIC</h3>
+        <img src="./image/suv/2022 GLE 350 4MATIC SUV.jpg" alt="html image">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="vehicle" name="Electric"  >
+        <h3>2022 EQB 350 4MATIC</h3>
+        <img src="./image/elec/2022 EQB 350 4MATIC.jpg" alt="html image">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="vehicle" name="Future"  >
+        <h3>2022c300_sedan 12</h3>
+        <img src="./image/2022c300_sedan.png" alt="html image">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+
+
+      <div class="vehicle"  name="Electric" >
+        <h3>2022 MBCAN EQS SEDAN HERO DR</h3>
+        <img src="./image/elec/MBCAN-2022-EQS-SEDAN-HERO-DR.jpg" alt="html image">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
 
       <div class="vehicle">
         <h3>2022c300_sedan</h3>
         <img src="./image/2022c300_sedan.png" alt="html image">
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
+
+      <div class="vehicle">
+        <h3>2022c300_sedan</h3>
+        <img src="./image/2022c300_sedan.png" alt="html image">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+
+      <div class="vehicle">
+        <h3>2022c300_sedan</h3>
+        <img src="./image/2022c300_sedan.png" alt="html image">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="vehicle">
+        <h3>2022c300_sedan</h3>
+        <img src="./image/2022c300_sedan.png" alt="html image">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="vehicle">
+        <h3>2022c300_sedan</h3>
+        <img src="./image/2022c300_sedan.png" alt="html image">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div> 
     </section>
   </main>
-  <!-- <footer>
-    <form action="random.php" method="get">
-      <label for="sign-up">Sign up for breaking news</label>
-      <input type="email" width="30px" id="sign-up" name="userEmail">
-      <input type="submit" value="Submit?">
-    </form>
-    </form>
-  </footer> -->
+
 </body>
-
-
-
 </html>
+

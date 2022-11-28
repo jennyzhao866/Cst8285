@@ -1,42 +1,19 @@
 
-window.onload = function (e) {
-  alert('a');
 
 
+function bFunction(text) {
+  //alert(text);
+
+ var all_vehicles = document.getElementsByClassName("vehicle");
+
+ if(text=="All vehicle") {
+  for(v of all_vehicles) {v.classList.remove("hide");v.classList.add("reveal");}
+ }
+ else {
+  var vehicles = document.getElementsByName(text);
+  for(v of all_vehicles) {v.classList.remove("reveal");v.classList.add("hide");}
+  for(v of vehicles) {v.classList.remove("hide");v.classList.add("reveal");}
+}
+ 
 }
 
-function listFunction() {
-
-  document.getElementById("sedan").style.display = 'block';
-
-  document.getElementById("suv").style.display = 'block';
-
-  document.getElementById("coupe").style.display = 'block';
-
-}
-function sedanFunction() {
-  
-  document.getElementById("sedan").style.display = 'block';
-  
-  document.getElementById("suv").style.display = 'none';
-  document.getElementById("coupe").style.display = 'none';
-
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  //   alert ('block');
-  // } else {
-  //   x.style.display = "hiden";
-  //   alert ('hiden');
-  // }
-}
-
-function suvFunction() {
-
-
-
-  document.getElementById("suv").style.display = 'block';
-
-  document.getElementById("coupe").style.display = 'none';
-
-  document.getElementById("sedan").style.display = 'none';
-}
